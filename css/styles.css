@@ -1,0 +1,191 @@
+html, body {
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  width: 100%;
+  background-color: #FFFAF0;
+  border: 0;
+  padding: 0;
+  margin: auto;
+  height: 100%;
+}
+
+#left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  font-family: 'Domine', serif;
+  max-height: 700px;
+  transition-duration: 0.3s;
+  flex-grow: 1;
+}
+
+#right {
+ display: flex;
+ width: 50%;
+ max-width: 550px;
+ flex: 0 0 auto;
+ background-image: url("../images/blackandwhite.png");
+ background-size: 100% auto;
+ opacity: 0.95;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Petit Formal Script', cursive;
+  margin: 0;
+  padding: 5px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav {
+  padding-bottom: 5px;
+}
+
+.aboutText {
+  padding: 10px;
+}
+
+.links {
+  color: #000000;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.pLinks {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.about {
+  display: none;
+  overflow-y: scroll;
+}
+
+.portfolio {
+  display: none;
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.cv {
+  display: none;
+  overflow-y: scroll;
+}
+
+.contact {
+  display: none;
+  overflow-y: scroll;
+}
+
+.portfolioImage {
+  padding: 20px;
+}
+
+.portfolioImage img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.portfolioImage p {
+  font-size: 15px;
+}
+
+.cvImage {
+  padding: 10px;
+  width: 70%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  padding: 10px;
+}
+
+#send {
+  margin: 10px;
+}
+
+.sentMessage {
+  display: none;
+}
+
+.phoneErrorMessage {
+  font-size: 15px;
+  color: #FF6347;
+  display: none;
+}
+
+#github .links {
+  font-size: 20px;
+}
+
+footer {
+  padding-top: 10px;
+}
+
+/*about background*/
+.pink {
+  background-color: #FFF5EE;
+}
+
+/*portfolio background*/
+.yellow {
+  background-color:	#FFFFF0;
+}
+
+/*cv background*/
+.blue {
+  background-color: #F8F8FF;
+}
+
+/*contact background*/
+.green {
+  background-color: #EAFEEA;
+}
+
+@media (max-width: 913px) {
+  #right {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .welcome h1 {
+    font-size: 30px;
+    padding: 5px 5px;
+  }
+}
