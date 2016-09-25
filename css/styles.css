@@ -55,9 +55,24 @@ p {
 }
 
 nav a {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   padding: 5px;
+  display: inline-block;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color .5s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  background: #000;
 }
 
 nav {
@@ -66,16 +81,17 @@ nav {
 
 .aboutText {
   padding: 10px;
+  margin: 0 20px;
 }
 
 .links {
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-size: 23px;
 }
 
 .pLinks {
-  color: #000000;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -97,6 +113,7 @@ nav {
 }
 
 .contact {
+  margin: 20px 0;
   display: none;
   overflow-y: scroll;
 }

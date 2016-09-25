@@ -35,6 +35,11 @@ function contact() {
   $(".contact").fadeIn(500);
 }
 
+function activeLink() {
+  $("nav a").css("font-style", "normal");
+  $(this).css("font-style", "italic");
+}
+
 function formValidation() {
   var numberInput = $("#number").val();
   if (numberInput.length < 8 && numberInput.length > 0) {
@@ -57,6 +62,7 @@ $(".cvLink").click(cv);
 $(".contactLink").click(contact);
 $("#send").click(sent);
 $("#number").keyup(formValidation);
+$("nav a").click(activeLink);
 }
 
 $(document).ready(start);
