@@ -40,29 +40,12 @@ function activeLink() {
   $(this).css("font-style", "italic");
 }
 
-function formValidation() {
-  var numberInput = $("#number").val();
-  if (numberInput.length < 8 && numberInput.length > 0) {
-    $(".phoneErrorMessage").fadeIn(200);
-  }
-  else $(".phoneErrorMessage").fadeOut(200);
-}
-
-function sent() {
-  $(".sentMessage").fadeIn(200);
-  window.setTimeout(function() {
-    $(".sentMessage").fadeOut();
-  }, 2000);
-}
-
 function start() {
-$(".aboutLink").click(about);
-$(".portfolioLink").click(portfolio);
-$(".cvLink").click(cv);
-$(".contactLink").click(contact);
-$("#send").click(sent);
-$("#number").keyup(formValidation);
-$("nav a").click(activeLink);
+  $(".aboutLink").click(about);
+  $(".portfolioLink").click(portfolio);
+  $(".cvLink").click(cv);
+  $(".contactLink").click(contact);
+  $("nav a").click(activeLink);
 }
 
 $(document).ready(start);
