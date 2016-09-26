@@ -1,37 +1,25 @@
 
 function about() {
-  $(".portfolio").fadeOut(200);
-  $(".cv").fadeOut(200);
-  $(".contact").fadeOut(200);
-  $("#left").attr("class", "pink");
-  $("#right").attr("class", "pink");
+  $("span").fadeOut(200);
+  $("#main").css("background-color", "#FFF5EE");
   $(".about").fadeIn(500);
 }
 
 function cv() {
-  $(".about").fadeOut(200);
-  $(".portfolio").fadeOut(200);
-  $(".contact").fadeOut(200);
-  $("#left").attr("class", "blue");
-  $("#right").attr("class", "blue");
+  $("span").fadeOut(200);
+  $("#main").css("background-color", "#F8F8FF");
   $(".cv").fadeIn(500);
 }
 
 function portfolio() {
-  $(".about").fadeOut(200);
-  $(".cv").fadeOut(200);
-  $(".contact").fadeOut(200);
-  $("#left").attr("class", "yellow");
-  $("#right").attr("class", "yellow");
+  $("span").fadeOut(200);
+  $("#main").css("background-color", "#FFFFF0");
   $(".portfolio").fadeIn(500);
 }
 
 function contact() {
-  $(".about").fadeOut(200);
-  $(".portfolio").fadeOut(200);
-  $(".cv").fadeOut(200);
-  $("#left").attr("class", "green");
-  $("#right").attr("class", "green");
+  $("span").fadeOut(200);
+  $("#main").css("background-color", "#EAFEEA");
   $(".contact").fadeIn(500);
 }
 
