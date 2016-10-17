@@ -18,7 +18,7 @@ html, body {
   justify-content: center;
   width: 50%;
   text-align: center;
-  font-family: 'Domine', serif;
+  font-family: 'Droid Serif', serif;
   max-height: 700px;
   transition-duration: 0.3s;
   flex-grow: 1;
@@ -69,7 +69,7 @@ nav a::after {
   transition: width 1s ease, background-color .5s ease;
 }
 
-nav a:hover::after {
+nav a:hover::after, nav a:focus {
   width: 100%;
   background: #000;
 }
@@ -130,38 +130,13 @@ nav {
 }
 
 .portfolioImage p {
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .cvImage {
   padding: 10px;
   width: 70%;
   height: 100%;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-label {
-  display: block;
-  padding: 10px;
-}
-
-#send {
-  margin: 10px;
-}
-
-.sentMessage {
-  display: none;
-}
-
-.phoneErrorMessage {
-  font-size: 15px;
-  color: #FF6347;
-  display: none;
 }
 
 #github .links {
@@ -203,4 +178,13 @@ footer {
     font-size: 30px;
     padding: 5px 5px;
   }
+
+  p {
+    font-size: 18px;
+  }
+
+  .aboutText {
+    margin: 0;
+  }
+
 }
