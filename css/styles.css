@@ -1,5 +1,6 @@
 html, body {
   height: 100%;
+  width: 100%;
 }
 
 #main {
@@ -17,8 +18,8 @@ html, body {
   justify-content: center;
   width: 50%;
   text-align: center;
-  font-family: 'Droid Serif', serif;
-  max-height: 700px;
+  font-family: 'Open Sans', sans-serif;
+  /*max-height: 700px;*/
   transition-duration: 0.3s;
   flex-grow: 1;
 }
@@ -41,16 +42,19 @@ html, body {
 .welcome a {
   color: #000;
   text-decoration: none;
+  font-size: 30px;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
   margin: 0;
   padding: 0;
 }
 
 h2 {
-  font-family: 'Petit Formal Script', cursive;
+  font-size: 36px;
+  font-family: 'Amatic SC', cursive;
   margin: 0;
   padding: 5px;
 }
@@ -155,29 +159,14 @@ footer {
   padding-top: 10px;
 }
 
-/*about background*/
-.pink {
-  background-color: #FFF5EE;
-}
-
-/*portfolio background*/
-.yellow {
-  background-color:	#FFFFF0;
-}
-
-/*cv background*/
-.blue {
-  background-color: #F8F8FF;
-}
-
-/*contact background*/
-.green {
-  background-color: #EAFEEA;
-}
-
 @media (max-width: 913px) {
   #right {
     display: none;
+  }
+
+  #left {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -188,18 +177,8 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
-  .welcome h1 {
-    font-size: 30px;
-    padding: 5px 5px;
-  }
-
+@media screen and (max-width: 320px) {
   p {
-    font-size: 18px;
+    font-size: 18px;  
   }
-
-  .aboutText {
-    margin: 0;
-  }
-
 }
