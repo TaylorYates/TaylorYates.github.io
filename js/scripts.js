@@ -8,12 +8,14 @@ function about() {
 function cv() {
   $("span").fadeOut(200);
   $("#main").css("background-color", "#F8F8FF");
+  $("#left").css("background-color", "#F8F8FF");
   $(".cv").fadeIn(500);
 }
 
 function portfolio() {
   $("span").fadeOut(200);
   $("#main").css("background-color", "#FFFFF0");
+  $("#left").css("background-color", "#F8F8FF");
   $(".portfolio").fadeIn(500);
 }
 
