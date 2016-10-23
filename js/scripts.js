@@ -1,28 +1,30 @@
+function hideSection() {
+ $("span").fadeOut(200);
+}
 
 function about() {
-  $("span").fadeOut(200);
-  $("#main").css("background-color", "#FFF5EE");
+  $(".background").css("background-color", "#FF6666");
   $(".about").fadeIn(500);
 }
 
 function cv() {
-  $("span").fadeOut(200);
-  $("#main").css("background-color", "#F8F8FF");
-  $("#left").css("background-color", "#F8F8FF");
+  $(".background").css("background-color", "#CCFF66");
   $(".cv").fadeIn(500);
 }
 
 function portfolio() {
-  $("span").fadeOut(200);
-  $("#main").css("background-color", "#FFFFF0");
-  $("#left").css("background-color", "#F8F8FF");
+  $(".background").css("background-color", "#31E3C3");
   $(".portfolio").fadeIn(500);
 }
 
 function contact() {
-  $("span").fadeOut(200);
-  $("#main").css("background-color", "#EAFEEA");
+  $(".background").css("background-color", "#FF8811");
   $(".contact").fadeIn(500);
+}
+
+function home() {
+  $(".background").css("background-color", "#FFD454");
+  $("nav a").css("font-style", "normal");
 }
 
 function activeLink() {
@@ -31,11 +33,13 @@ function activeLink() {
 }
 
 function start() {
+  $(".hideSpans").click(hideSection);
   $(".aboutLink").click(about);
   $(".portfolioLink").click(portfolio);
   $(".cvLink").click(cv);
   $(".contactLink").click(contact);
   $("nav a").click(activeLink);
+  $(".welcome").click(home);
 }
 
 $(document).ready(start);
