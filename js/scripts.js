@@ -18,7 +18,7 @@ function portfolio() {
 }
 
 function contact() {
-  $(".background").css("background-color", "#9D44B5");
+  $(".background").css("background-color", "#BD7ECF");
   $(".contact").fadeIn(500);
 }
 
