@@ -141,6 +141,12 @@ nav {
   border-radius: 5px;
 }
 
+.ally img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+}
+
 .portfolioImage p {
   font-size: 18px;
 }
