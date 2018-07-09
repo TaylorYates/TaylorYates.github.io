@@ -1,8 +1,7 @@
 function startUp() {
   $("span").css("display", "none");
   $(".about").css("display", "block");
-  $(".aboutLink").css("font-style", "italic");
-
+  $(".aboutLinkActual").css("font-style", "italic");
 }
 
 function hideSection() {
@@ -27,6 +26,7 @@ function contact() {
 
 function home() {
   $("nav a").css("font-style", "normal");
+  $(".aboutLinkActual").css("font-style", "italic");
 }
 
 function activeLink() {
