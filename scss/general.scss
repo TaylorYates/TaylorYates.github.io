@@ -1,0 +1,64 @@
+body {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: $background;
+  color: $secondaryA;
+  // box-shadow: 0 0 11px rgba(33,33,33,.2);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p, a {
+  font-size: 1em;
+}
+
+a {
+  color: $primary;
+  text-decoration: underline;
+
+  &.welcome {
+    text-decoration: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.fa {
+  color: $secondaryA;
+}
+
+.portfolioImage {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  max-width: 40%;
+  display: inline-block;
+  padding: 20px;
+  margin: 20px 0;
+  vertical-align: top;
+
+  &:nth-child(odd) {
+    margin-right: 20px;
+  }
+
+  @media screen and (max-width: 740px) {
+    width: 90%;
+    max-width: 90%;
+  }
+}

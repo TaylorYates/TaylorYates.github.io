@@ -1,198 +1,48 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-#main {
-  display: flex;
-  width: 100%;
-  border: 0;
-  padding: 0;
-  margin: auto;
-  height: 100%;
-}
-
-#left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  text-align: center;
+body {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  color: #636363;
   font-family: 'Open Sans', sans-serif;
-  /*max-height: 700px;*/
-  transition-duration: 0.3s;
-  flex-grow: 1;
-}
+  font-size: 18px; }
 
-#right {
- display: flex;
- width: 50%;
- flex: 0 0 auto;
- background-image: url("../images/blackandwhite.png");
- background-size: cover;
- opacity: 0.95;
- background-position: center;
- background-repeat: no-repeat;
-}
-
-.background {
-  background-color: #FFD454;
-}
-
-.welcome a {
-  color: #000;
-  text-decoration: none;
-  font-size: 30px;
-}
+h1,
+h2 {
+  font-family: 'Amatic SC', cursive; }
 
 h1 {
-  font-size: 50px;
-  font-family: 'Amatic SC', cursive;
-  margin: 0;
-  padding: 0;
-}
+  font-size: 3em;
+  text-decoration: none; }
 
 h2 {
-  font-size: 36px;
-  font-family: 'Amatic SC', cursive;
-  margin: 0;
-  padding: 5px;
-}
+  font-size: 2em; }
 
-p {
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-}
+p, a {
+  font-size: 1em; }
 
-nav a {
-  color: #000;
-  text-decoration: none;
-  padding: 5px;
-  display: inline-block;
-}
+a {
+  color: #fc5b65;
+  text-decoration: underline; }
+  a.welcome {
+    text-decoration: none; }
 
-nav a::after {
-  content: '';
-  display: block;
-  height: 2px;
-  width: 0;
-  background: transparent;
-  transition: width 1s ease, background-color .5s ease;
-}
+img {
+  max-width: 100%; }
 
-nav a:hover::after {
-  width: 100%;
-  background: #000;
-}
-
-nav {
-  padding-bottom: 5px;
-}
-
-.aboutText {
-  padding: 10px;
-  margin: 0 20px;
-}
-
-.links {
-  color: #000;
-  text-decoration: none;
-  font-size: 23px;
-}
-
-.pLinks {
-  color: #000;
-  text-decoration: underline;
-}
-
-.about {
-  display: none;
-  overflow-y: scroll;
-}
-
-.portfolio {
-  display: none;
-  width: 100%;
-  overflow-y: scroll;
-}
-
-.cv {
-  display: none;
-  overflow-y: scroll;
-}
-
-.contact {
-  margin: 20px 0;
-  display: none;
-  overflow-y: scroll;
-}
+.fa {
+  color: #636363; }
 
 .portfolioImage {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  max-width: 40%;
+  display: inline-block;
   padding: 20px;
-}
-
-.portfolioImage img {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-  height: 100%;
-  max-width: 100%;
-  border-radius: 5px;
-}
-
-.ally img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-}
-
-.portfolioImage p {
-  font-size: 18px;
-}
-
-.cvImage {
-  padding: 10px;
-  width: 70%;
-  height: 100%;
-}
-
-#github .links {
-  font-size: 20px;
-}
-
-footer {
-  padding-top: 10px;
-}
-
-.snippet {
-  font-size: 12px;
-}
-
-@media (max-width: 913px) {
-  #right {
-    display: none;
-  }
-
-  #left {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  nav a:hover::after, nav a:focus {
-    width: 0;
-    background: #000;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 18px;
-  }
-}
+  margin: 20px 0;
+  vertical-align: top; }
+  .portfolioImage:nth-child(odd) {
+    margin-right: 20px; }
+  @media screen and (max-width: 740px) {
+    .portfolioImage {
+      width: 90%;
+      max-width: 90%; } }
