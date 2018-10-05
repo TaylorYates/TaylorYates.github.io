@@ -46,6 +46,11 @@ img {
   color: $secondaryA;
 }
 
+.status {
+  color: $primary;
+  margin-bottom: 0;
+}
+
 .portfolioImage {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   max-width: 40%;

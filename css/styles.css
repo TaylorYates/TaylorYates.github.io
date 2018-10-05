@@ -34,6 +34,10 @@ img {
 .fa {
   color: #636363; }
 
+.status {
+  color: #fc5b65;
+  margin-bottom: 0; }
+
 .portfolioImage {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   max-width: 40%;
