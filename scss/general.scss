@@ -4,14 +4,13 @@ body {
   padding: 30px;
   background-color: $background;
   color: $secondaryA;
-  // box-shadow: 0 0 11px rgba(33,33,33,.2);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
 h1,
 h2 {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
 }
 
 h1 {
@@ -24,7 +23,8 @@ h2 {
   font-size: 2em;
 }
 
-p, a {
+p,
+a {
   font-size: 1em;
 }
 
@@ -41,7 +41,6 @@ img {
   max-width: 100%;
 }
 
-
 .fa {
   color: $secondaryA;
 }
@@ -52,7 +51,7 @@ img {
 }
 
 .portfolioImage {
-  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
   max-width: 40%;
   display: inline-block;
   padding: 20px;
@@ -67,4 +66,11 @@ img {
     width: 90%;
     max-width: 90%;
   }
+}
+
+.cat {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: bottom;
 }
