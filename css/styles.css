@@ -4,12 +4,12 @@ body {
   padding: 30px;
   background-color: #FFFFFF;
   color: #636363;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px; }
 
 h1,
 h2 {
-  font-family: 'Amatic SC', cursive; }
+  font-family: "Amatic SC", cursive; }
 
 h1 {
   font-size: 3em;
@@ -19,7 +19,8 @@ h1 {
 h2 {
   font-size: 2em; }
 
-p, a {
+p,
+a {
   font-size: 1em; }
 
 a {
@@ -51,3 +52,8 @@ img {
     .portfolioImage {
       width: 90%;
       max-width: 90%; } }
+
+.cat {
+  width: 30px;
+  height: 30px;
+  display: inline-block; }
